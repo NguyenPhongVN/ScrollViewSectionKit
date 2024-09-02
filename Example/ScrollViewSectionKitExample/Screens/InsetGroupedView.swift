@@ -1,5 +1,5 @@
 //
-//  GroupedView.swift
+//  InsetGroupedView.swift
 //  ScrollViewSectionKitExample
 //
 //  Created by Pavol Kmet on 15/04/2023.
@@ -8,7 +8,7 @@
 import ScrollViewSectionKit
 import SwiftUI
 
-struct GroupedView: View {
+struct InsetGroupedView: View {
     
     // MARK: - View
     
@@ -61,11 +61,11 @@ struct GroupedView: View {
                         }
                     }
                 } header: {
-                    Text("Grouped section header".uppercased())
+                    Text("Inset Grouped section header".uppercased())
                 } footer: {
                     Label("This can be something for example `Label(:systemImage:)` and every SwiftUI component is supported.", systemImage: "info.circle.fill")
                 }
-                .scrollViewSectionStyle(.grouped)
+                .scrollViewSectionStyle(.insetGrouped)
             }
         }
         .scrollViewSectionBackgroundColor(.clear)
@@ -73,14 +73,12 @@ struct GroupedView: View {
             Color(uiColor: UIColor.systemGroupedBackground)
                 .ignoresSafeArea()
         }
-        .navigationTitle("Grouped")
+        .navigationTitle("Inset Grouped")
         .navigationBarTitleDisplayMode(.inline)
     }
     
 }
 
-struct GroupedView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupedView()
-    }
+#Preview {
+  InsetGroupedView()
 }

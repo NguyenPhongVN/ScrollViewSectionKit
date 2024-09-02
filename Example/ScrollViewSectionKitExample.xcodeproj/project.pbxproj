@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8442E0912C858E6D0011B7FB /* ScrollViewSectionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8442E0902C858E6D0011B7FB /* ScrollViewSectionKit */; };
 		BC57F00B29E8BAFB0018CF9D /* ScrollViewSectionKitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57F00A29E8BAFB0018CF9D /* ScrollViewSectionKitExampleApp.swift */; };
 		BC57F00F29E8BAFB0018CF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC57F00E29E8BAFB0018CF9D /* Assets.xcassets */; };
-		BC57F01A29E8BB4D0018CF9D /* ScrollViewSectionKit in Frameworks */ = {isa = PBXBuildFile; productRef = BC57F01929E8BB4D0018CF9D /* ScrollViewSectionKit */; };
 		BC8B91E429E9C2B400ED7EBE /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B91E329E9C2B400ED7EBE /* RoundedCorners.swift */; };
 		BC8B91E729E9C2E300ED7EBE /* CustomScrollViewSectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B91E629E9C2E300ED7EBE /* CustomScrollViewSectionStyle.swift */; };
 		BC91186529EAB82200CCF747 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91186429EAB82200CCF747 /* HomeView.swift */; };
@@ -41,18 +41,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC57F01A29E8BB4D0018CF9D /* ScrollViewSectionKit in Frameworks */,
+				8442E0912C858E6D0011B7FB /* ScrollViewSectionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8442E08F2C858E6D0011B7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC57EFFE29E8BAFA0018CF9D = {
 			isa = PBXGroup;
 			children = (
 				BC57F00929E8BAFB0018CF9D /* ScrollViewSectionKitExample */,
 				BC57F00829E8BAFB0018CF9D /* Products */,
+				8442E08F2C858E6D0011B7FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +155,7 @@
 			);
 			name = ScrollViewSectionKitExample;
 			packageProductDependencies = (
-				BC57F01929E8BB4D0018CF9D /* ScrollViewSectionKit */,
+				8442E0902C858E6D0011B7FB /* ScrollViewSectionKit */,
 			);
 			productName = ScrollViewSectionKitExample;
 			productReference = BC57F00729E8BAFB0018CF9D /* ScrollViewSectionKitExample.app */;
@@ -178,7 +186,6 @@
 			);
 			mainGroup = BC57EFFE29E8BAFA0018CF9D;
 			packageReferences = (
-				BC57F01829E8BB4D0018CF9D /* XCRemoteSwiftPackageReference "ScrollViewSectionKit" */,
 			);
 			productRefGroup = BC57F00829E8BAFB0018CF9D /* Products */;
 			projectDirPath = "";
@@ -416,21 +423,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		BC57F01829E8BB4D0018CF9D /* XCRemoteSwiftPackageReference "ScrollViewSectionKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pavolkmet/ScrollViewSectionKit";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		BC57F01929E8BB4D0018CF9D /* ScrollViewSectionKit */ = {
+		8442E0902C858E6D0011B7FB /* ScrollViewSectionKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BC57F01829E8BB4D0018CF9D /* XCRemoteSwiftPackageReference "ScrollViewSectionKit" */;
 			productName = ScrollViewSectionKit;
 		};
 /* End XCSwiftPackageProductDependency section */
